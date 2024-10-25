@@ -1,0 +1,262 @@
+ /* body{
+    margin: 0;
+    font-family: 'poppins',sans-serif;
+    background-color: #FDFFEB;
+}
+
+header,footer{
+    position: absolute;
+    background-color: none;
+    width: 100%;
+    color: black;
+
+.main{
+    position: absolute;
+    background-color: #d2a3a9;
+}
+main p{
+    position: relative;
+    color: black;
+    font-size: 20px;
+    margin-left: 25%;
+    
+}
+.nav{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    color: black;
+    line-height: 80px;
+    height: 80px;
+    font-size: 16px;
+    padding: 0 30px;
+    top: 0;
+    left: 0;
+    font-family: sans-serif;
+    background-color: #d2a3a9;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+}
+.a.nav-logo{
+    float: left;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 30px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: black;
+}
+.ul{
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 50px;
+}
+.ul li{
+    display: inline-block;
+}
+.ul li a{
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 30px;
+}
+.ul li a:hover{
+    background-color: white;
+}
+.content{
+    font-family: sans-serif;
+    color: black;
+    margin-top: 35%;
+    margin-left: 40px;
+}
+h1{
+    font-size: 50px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.btns{
+    margin-top: 20px ;
+    background: #FDFFEB;
+    cursor: pointer;
+    color: black;
+    padding: 12px 20px;
+    float: left;
+    border: 0;
+    border-radius: 15px;
+    margin-left: 15%;
+    width: 25%;
+}
+.btns:hover{
+    background-color: aqua;
+}
+img{
+    margin-top: 130px;
+    margin-left: 30px;
+    width: 85%;
+}
+footer{
+    position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #d2a3a9;
+   color: white;
+   height: 80px;
+   
+  }
+
+.head{
+    position: absolute;
+    height: 20px;
+    left: 70px;
+    margin-top: 90px;
+    
+
+}
+*/
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FDFFEB;
+  }
+  
+  nav {
+    overflow: hidden;
+    padding-left: 20px;
+    color: white;
+    background-color:  #d2a3a9;
+    width: 100%;
+  }
+  
+ /* nav h2{
+  text-align: right; 
+  padding-right: 30px;
+  }
+*/  
+  nav a{
+   float: left;
+   display: block;
+   padding-right: 50px;
+   padding-bottom: 14px;
+   text-align: center;
+   text-decoration: none;
+   color: white;
+  }
+  
+  .content {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  
+  .content a{
+  text-decoration: none;
+  color: grey;
+  }
+  
+  footer {
+    color: white;
+    background-color: #d2a3a9;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  
+  #trade{
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px
+  }
+  
+  label{
+  font-size: small;
+  }
+  
+  td{
+  padding-right: 10px;
+  padding-bottom: 10px;
+  }
+  
+  .align-top{
+  vertical-align: top;
+  }
+  
+  .align-right{
+  text-align: right;
+  }
+  
+  .fixed-width{
+  width: 300px;
+  }
+  
+  input, textarea{
+  font-family: Arial, Helvetica, sans-serif;
+  }
+.navbar ul{
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 50px;
+}
+.navbar li{
+    display: inline-block;
+}
+.navbar.ul li a{
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 30px;
+}
+div img {   
+    width: 450px;
+    text-align: right;  
+    padding: 10px;  
+    border: 2px solid black;  
+    margin-left: 630px;
+}
+.btns{
+        margin-top: 8px ;
+        background: #FDFFEB;
+        cursor: pointer;
+        color: black;
+        padding: 2px 0px;
+        float: left;
+        border: 0;
+        border-radius: 13px;
+        margin-left: 2px;
+        width: 15%;
+    }
+
+
+.tag{
+
+        position: absolute;
+        height: 20px;
+        left: 40px;
+        margin-top: 60px;;
+
+}
+.content h1{
+        font-family: sans-serif;
+        color: black;
+        margin-top: 3%;
+        margin-left: 58px;
+}
+.content p{
+    margin-left: 62px;
+    margin-top: 0px;
+
+}
+

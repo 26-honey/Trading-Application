@@ -1,0 +1,26 @@
+// List of all databases
+demos> show databases;
+
+//creating and to use the database
+use demos;
+
+//creating collection
+db.createCollection("trades")
+show collections
+
+// Inserting western wear data into the collections
+db.trades.insertMany([ {category:"Western Wear", item_Name:"Skirt", designed_By:"Honey Umasree", manufactured_At:"UK", details:"A skirt is the lower part of a dress or a separate outer garment that covers a person from the waist downwards."},{category:"Western Wear", item_Name:"Jeans", designed_By:"Sussane", manufactured_At:"Singapore", details:"Jeans are a type of pants or trousers made from denim or dungaree cloth. Often the term jeans refers to a particular style of trousers, called blue jeans, with copper-riveted pockets."}, {category: "Western Wear", item_Name: "Jacket", designed_By: "sree", manufactured_At:"USA", details: "A jacket is a garment for the upper body, usually extending below the hips.A jacket typically has sleeves, and fastens in the front or slightly on the side."}  ]);
+
+// Inserting Indian wear data into the collections
+db.trades.insertMany([ {category:"Indian Wear", item_Name:"Churidar", designed_By:"Abhai Pedapaga", manufactured_At:"India", details:"Churidars, also churidar pyjamas, are tightly fitting trousers worn by both men and women in Indian Subcontinent. Churidars are a variant of the common shalwar pants."},
+{category:"Indian Wear", item_Name:"Lehenga", designed_By:"Sushma rao", manufactured_At:"India", details:"The lehenga, lehnga or langa (also known as a ghagra or gagra, chaniya, pavadai, or lacha) is a form of ankle-length skirt from the Indian subcontinent."}, {category: "Indian Wear", item_Name: "Sari", designed_By: "sree", manufactured_At:"USA", details: "A sari (sometimes also saree or shari) is a women's garment from the Indian subcontinent, that consists of an un-stitched stretch of woven fabric arranged over the body as a robe, with one end attached to the waist, while the other end rests over one shoulder as a stole (shawl)."}  ]);
+
+// To display the details of the data
+db.trades.find()
+
+
+
+
+
+
+

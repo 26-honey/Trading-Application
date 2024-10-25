@@ -1,0 +1,13 @@
+<%- include ('../partials/header.ejs')%>
+        <div class="content">
+             <h4><%= trade.category %></h4>
+             <h4><%= trade.item_Name %></h4>
+             <small>Posted <%=trade.createdAt%> by <%= trade.designed_By%>,</small>&nbsp;
+             <small>Manufactured in <%=trade.manufactured_At%></small>
+             <div id="trade"><%=trade.details%></div>
+             <form>
+                  <button type="submit" formmethod="GET" formaction="/trades/<%=trade.id%>/edit">Edit</button>
+                  <button type="submit" formmethod="POST" formaction="/trades/<%=trade.id%>?_method=DELETE">Delete</button>
+             </form>
+       </div>
+<%- include('../partials/footer.ejs')%>

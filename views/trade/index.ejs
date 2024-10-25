@@ -1,0 +1,31 @@
+<%- include('../partials/header.ejs')%>
+  <link rel="stylesheet" type="text/css" href="/css/index.css">
+
+  <div class="content">
+    <% if(trades.length) { %> 
+      <h3>Select the category</h3>
+      <% const tradesByCategory = trades.reduce((acc, trade) => { 
+           if (!acc[trade.category]) {
+             acc[trade.category] = []; 
+           }
+           acc[trade.category].push(trade); 
+           return acc;
+        }, {}); 
+        Object.entries(tradesByCategory).forEach(([category, trades]) => { %> 
+          <h4><%= category %></h4>
+          <ul>
+            <% trades.forEach(trade => { %> 
+              <li>
+                <a href="/trades/<%= trade.id %>">
+                  <p style="font-size: 14px"><%= trade.item_Name %></p> 
+                </a>
+              </li>
+            <% }); %>
+          </ul>
+      <% }); %>
+    <% } else { %> 
+      <p>There are no categories to display</p>
+    <% } %>
+  </div>
+  
+<%- include('../partials/footer.ejs')%>
